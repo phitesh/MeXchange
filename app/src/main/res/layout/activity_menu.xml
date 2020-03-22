@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_light_background"
+    android:padding="10dp"
+    android:scrollbarStyle="insideOverlay"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="374dp"
+            android:layout_height="250dp"
+            android:hapticFeedbackEnabled="true"
+            app:cardCornerRadius="10dp"
+
+            app:cardElevation="20dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="324dp"
+                android:layout_height="209dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:contentDescription="TODO"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.271"
+                    app:srcCompat="@drawable/controller" />
+
+                <TextView
+                    android:id="@+id/Controller_Card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="61dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="Gaming Controller"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:layout_constraintBottom_toTopOf="@+id/Controller_Points"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Controller_Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Barter Points:200"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toTopOf="@+id/Controller_Give"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toBottomOf="@+id/Controller_Card" />
+
+                <Button
+                    android:id="@+id/Controller_Give"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="62dp"
+                    android:text="Give"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Controller_Get"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toBottomOf="@+id/Controller_Points" />
+
+                <Button
+                    android:id="@+id/Controller_Get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="55dp"
+                    android:text="Get"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Controller_Give"
+                    app:layout_constraintTop_toBottomOf="@+id/Controller_Points" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="374dp"
+            android:layout_height="250dp"
+            android:hapticFeedbackEnabled="true"
+            app:cardCornerRadius="10dp"
+
+            app:cardElevation="20dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="2dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="324dp"
+                android:layout_height="209dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:contentDescription="TODO"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.271"
+                    app:srcCompat="@drawable/badminton" />
+
+                <TextView
+                    android:id="@+id/Badminton_Card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="61dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="Gaming Controller"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:layout_constraintBottom_toTopOf="@+id/Badminton_Points"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Badminton_Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Barter Points:200"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toTopOf="@+id/Badminton_Give"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintTop_toBottomOf="@+id/Badminton_Card" />
+
+                <Button
+                    android:id="@+id/Badminton_Give"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="62dp"
+                    android:text="Give"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Badminton_Get"
+                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintTop_toBottomOf="@+id/Badminton_Points" />
+
+                <Button
+                    android:id="@+id/Badminton_Get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="55dp"
+                    android:text="Get"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Badminton_Give"
+                    app:layout_constraintTop_toBottomOf="@+id/Badminton_Points" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/ProfileButton"
+            android:layout_width="46dp"
+            android:layout_height="50dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+    </LinearLayout>
+
+</ScrollView>
