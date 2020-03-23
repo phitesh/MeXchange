@@ -7,7 +7,7 @@
     tools:context=".User_Profile">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:hapticFeedbackEnabled="true"
         app:cardCornerRadius="10dp"
@@ -15,6 +15,7 @@
         app:cardElevation="20dp"
         app:cardUseCompatPadding="true"
         app:contentPadding="2dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
